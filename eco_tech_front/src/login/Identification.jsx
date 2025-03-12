@@ -1,5 +1,3 @@
-import "./style/Inscription.css";
-
 function Identification() {
   const handleSubmit = (e) => {
     e.preventDefault();

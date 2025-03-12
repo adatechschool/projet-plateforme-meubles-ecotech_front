@@ -1,4 +1,4 @@
-import "./style/Inscription.css";
+import "./Inscription";
 
 function Inscription() {
   const handleSubmit = (e) => {
@@ -18,7 +18,7 @@ function Inscription() {
   };
 
   return (
-    <>
+    <div className="generale">
       <h2>Créer mon compte</h2>
       <div className="Inscription">
         <form onSubmit={handleSubmit}>
@@ -34,7 +34,7 @@ function Inscription() {
           <button type="submit">Enregistrer</button>
         </form>
       </div>
-    </>
+    </div>
   );
 }
 
