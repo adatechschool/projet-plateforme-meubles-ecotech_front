@@ -7,12 +7,12 @@ function Inscription() {
     const form = e.target;
     const formData = new FormData(form);
 
-    const name = formData.get("name");
-    const firstname = formData.get("firstname");
+    const Fullname = formData.get("Fullname");
+
     const email = formData.get("email");
     const password = formData.get("password");
 
-    console.log({ name, firstname, email, password });
+    console.log({ Fullname, email, password });
 
     form.reset();
   };
@@ -22,11 +22,8 @@ function Inscription() {
       <h2>Créer mon compte</h2>
       <div className="Inscription">
         <form onSubmit={handleSubmit}>
-          <label htmlFor="name">Nom</label>
-          <input name="name" type="text" id="name" required />
-
-          <label htmlFor="firstname">Prénom</label>
-          <input name="firstname" type="text" id="firstname" required />
+          <label htmlFor="name">Fullname</label>
+          <input name="Fullname" type="text" id="Fullname" required />
 
           <label htmlFor="email">Email</label>
           <input name="email" type="email" id="email" required />
