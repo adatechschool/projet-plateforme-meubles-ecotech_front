@@ -1,8 +1,8 @@
-/* 🌿 Style de la navbar écologique */
+/* 🌿 Style de la navbar écologique moderne */
 .main {
-  background-color: #2b382cf0; /* Vert forêt */
+  background-color: #1b2a20; /* Vert foncé profond */
   padding: 15px 0;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* 📦 Container pour centrer la navbar */
@@ -18,10 +18,13 @@
 /* 🌱 Logo */
 .logo img {
   height: 50px;
+  filter: brightness(0.9);
 }
+
 .search {
   margin-right: 10px;
 }
+
 /* 📌 Section navigation */
 .nav {
   display: flex;
@@ -30,22 +33,25 @@
 
 /* 🔍 Barre de recherche */
 .search input {
-  padding: 8px;
-  border-radius: 20px;
-  border: 7px solid #aaebad; /* Vert clair */
+  padding: 8px 15px;
+  border-radius: 25px;
+  border: 2px solid #4caf50; /* Vert vibrant */
+  background-color: #263d2f; /* Vert foncé désaturé */
+  color: #d9f2e6; /* Vert pâle */
   outline: none;
-  transition: 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 .search input:focus {
-  border-color: #ffffff; /* Blanc */
-  background-color: #f1f8e9; /* Beige clair */
+  border-color: #66ff99; /* Vert clair lumineux */
+  background-color: #1f3328;
+  color: #ffffff;
 }
 
 /* 📍 Liste des liens */
 .links ul {
   display: flex;
-  gap: 20px;
+  gap: 25px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -57,37 +63,46 @@
 
 .links ul li a {
   text-decoration: none;
-  color: #ffffff; /* Blanc */
+  color: #d9f2e6; /* Vert clair doux */
   font-weight: bold;
-  transition: color 0.3s;
+  transition: color 0.3s, transform 0.2s;
 }
 
 .links ul li a:hover {
-  color: #f1f8e9; /* Beige clair */
+  color: #66ff99; /* Vert vif */
+  transform: scale(1.05);
 }
 
 /* 🧑 Avatar et connexion */
 .user {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   margin-left: 100px;
 }
 
 .user a {
-  color: #ffffff; /* Blanc */
+  color: #d9f2e6; /* Vert clair doux */
   font-weight: bold;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.3s, transform 0.2s;
 }
 
 .user a:hover {
-  color: #f1f8e9; /* Beige clair */
+  color: #66ff99; /* Vert vif */
+  transform: scale(1.05);
 }
 
+/* 🌟 Avatar */
 .avatar img {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
-  border: 2px solid #66bb6a; /* Vert clair */
+  border: 2px solid #4caf50; /* Vert lumineux */
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.avatar img:hover {
+  transform: rotate(10deg) scale(1.1);
+  border-color: #66ff99;
 }
