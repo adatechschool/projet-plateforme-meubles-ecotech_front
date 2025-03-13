@@ -1,0 +1,29 @@
+[
+    {
+      "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp16-spaceblack-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1728916322507",
+      "titre": "Ordinateur Portable",
+      "info": "Écran 15,6 pouces, Intel Core i7, 16 Go RAM, 512 Go SSD",
+      "prix": 1299.99
+    },
+    {
+      "titre": "Smartphone",
+      "info": "Écran OLED 6,5 pouces, 128 Go de stockage, double SIM",
+      "prix": 799.99
+    },
+    {
+      "titre": "Casque Bluetooth",
+      "info": "Réduction de bruit active, autonomie 30h, charge rapide",
+      "prix": 199.99
+    },
+    {
+      "titre": "Montre Connectée",
+      "info": "Suivi de la santé, GPS intégré, étanche 50m",
+      "prix": 249.99
+    },
+    {
+      "titre": "Clavier Mécanique",
+      "info": "Switches rouges, rétroéclairage RGB, connexion USB-C",
+      "prix": 149.99
+    }
+  ]
+  
