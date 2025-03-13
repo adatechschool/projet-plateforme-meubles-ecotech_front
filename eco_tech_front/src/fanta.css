@@ -120,7 +120,7 @@
 }
 
 body {
-    background: var(--background-primary);
+  
     color: var(--color-primary);
     font-size: 0.875rem;
     line-height: 1.6rem;
@@ -480,7 +480,7 @@ select {
     font-size: 1em;
     background-color: var(--background-muted);
     border: 1px solid var(--border-secondary);
-    color: var(--color-primary);
+    
     padding: 0.5rem 0.75rem;
     border-radius: var(--border-radius-small);
     width: 100%;
