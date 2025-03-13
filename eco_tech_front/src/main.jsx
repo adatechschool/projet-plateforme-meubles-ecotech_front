@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import  Footer from "./Footer.jsx"
 
 import App from "./App.jsx";
+import Data from "./components/Card/data.jsx";
 
 import Navbar from "./components/Header/Nav_bar.jsx";
 createRoot(document.getElementById("root")).render(
@@ -11,6 +12,7 @@ createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <Navbar />
       <br />
+      <Data />
       <App />
       <Footer/>
     </BrowserRouter>
