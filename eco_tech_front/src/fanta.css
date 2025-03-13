@@ -119,12 +119,6 @@
     font-family: "Eczar", serif;
 }
 
-body {
-  
-    color: var(--color-primary);
-    font-size: 0.875rem;
-    line-height: 1.6rem;
-}
 
 /* Special */
 .text-gradient {
@@ -138,7 +132,7 @@ body {
 
 /* Typography */
 h1,
-h2,
+
 h3,
 h4,
 h5,
@@ -419,7 +413,7 @@ tbody tr:nth-child(even):hover td {
 }
 
 /* Form elements */
-input,
+
 button,
 select,
 optgroup,
@@ -429,13 +423,7 @@ textarea {
 
 button,
 select,
-input[type="submit"],
-input[type="button"],
-input[type="checkbox"],
-input[type="range"],
-input[type="radio"] {
-    cursor: pointer;
-}
+
 
 button {
     color: var(--color-primary);
@@ -474,7 +462,7 @@ label {
     font-weight: 500;
 }
 
-input,
+
 textarea,
 select {
     font-size: 1em;
