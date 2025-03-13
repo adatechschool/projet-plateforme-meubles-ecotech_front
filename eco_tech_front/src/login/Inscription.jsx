@@ -19,7 +19,7 @@ function Inscription() {
 
   return (
     <div className="generale">
-      <h2>Créer mon compte</h2>
+      <h2 className="textInscription">Créer mon compte</h2>
       <div className="Inscription">
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Fullname</label>

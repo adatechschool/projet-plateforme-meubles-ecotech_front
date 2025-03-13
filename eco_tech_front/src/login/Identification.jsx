@@ -14,8 +14,8 @@ function Identification() {
   };
 
   return (
-    <>
-      <h2>Connectez-vous à votre compte</h2>
+    <div className="ggeneralIdentification">
+      <h2 className="textIdentification">Connectez-vous à votre compte</h2>
       <div className="Identification">
         <form onSubmit={handleSubmit}>
           <label htmlFor="email">Email</label>
@@ -27,7 +27,7 @@ function Identification() {
           <button type="submit">Connection</button>
         </form>
       </div>
-    </>
+    </div>
   );
 }
 

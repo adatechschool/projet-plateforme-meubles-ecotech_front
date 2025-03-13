@@ -5,7 +5,7 @@ import Inscription from "./Inscription";
 export default function LoginPage() {
   return (
     <div>
-      <div className="style.loging-page">
+      <div className="logingPage">
         <Identification />
         <Inscription />
       </div>

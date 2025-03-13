@@ -1,6 +1,6 @@
 /* 🌿 Style de la navbar écologique */
 .main {
-  background-color: #2e7d32; /* Vert forêt */
+  background-color: #2b382cf0; /* Vert forêt */
   padding: 15px 0;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -32,7 +32,7 @@
 .search input {
   padding: 8px;
   border-radius: 20px;
-  border: 7px solid #79d97e; /* Vert clair */
+  border: 7px solid #aaebad; /* Vert clair */
   outline: none;
   transition: 0.3s;
 }

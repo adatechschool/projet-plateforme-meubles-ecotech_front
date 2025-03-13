@@ -1,4 +1,4 @@
-body {
+/* body {
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
@@ -6,8 +6,13 @@ body {
   height: 100vh;
   background-color: #f8f9fa;
   margin: 0;
+} */
+.logingPage {
+  display: flex;
+  margin: 3rem;
+  padding: 0 20px;
+  justify-content: space-evenly;
 }
-
 .Identification {
   background: #ffffff;
   padding: 20px;
@@ -15,6 +20,13 @@ body {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border: 1px solid #ddd;
   width: 300px;
+  .textIdentification {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
 }
 
 .Inscription {
@@ -23,15 +35,17 @@ body {
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border: 1px solid #ddd;
+
   width: 300px;
+  .textInscription {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
 }
-h2 {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-}
+
 form {
   display: flex;
   flex-direction: column;
