@@ -12,7 +12,6 @@ createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <Navbar />
       <br />
-      <Data />
       <App />
       <Footer/>
     </BrowserRouter>

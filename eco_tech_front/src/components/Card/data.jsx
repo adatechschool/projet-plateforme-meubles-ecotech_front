@@ -4,7 +4,7 @@ import produits from './products.json';
 
 function Data() {
   return (
-    <div className='App'>
+    <div className='Data'>
       {produits.map((produit, index) => (
         <Products
           key={index}
