@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.webp";
 import styles from "./Nav_bar.module.css";
+import Search from "./input/Search";
 export default function Navbar() {
   return (
     <header className={styles.main}>
@@ -13,7 +14,7 @@ export default function Navbar() {
         </div>
         <div className={styles.nav}>
           <div className={styles.search}>
-            <input type="text" />
+            <Search />
           </div>
           <nav className={styles.links}>
             <ul>
