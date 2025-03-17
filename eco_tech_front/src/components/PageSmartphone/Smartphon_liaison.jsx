@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { StrictMode } from "react";
 import { Products } from "../Card/Card";
 
 function smartphone (){
@@ -20,7 +19,7 @@ setProducts(data2);
 console.log(products);
 
 return(
-    products.map(item => Products(item))
+    products.map(product => Products(product))
 )
 
 }
