@@ -18,7 +18,7 @@ export default function Navbar() {
           <nav className={styles.links}>
             <ul>
               <li>
-                <Link to="/Data">Smartphone</Link>
+                <Link to="/smartphone">Smartphone</Link>
               </li>
               <li>
                 <Link to="/">Ordinateur Portable</Link>
