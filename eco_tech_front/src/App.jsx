@@ -7,7 +7,8 @@ import Smartphon_liaison from "./components/PageSmartphone/Smartphon_liaison.jsx
 import { AdminPage } from "./components/admin/AdminPage.jsx";
 import Ordinateur_liaison from "./components/PageLaptop/Ordinateur_liaison.jsx";
 import ProductDetails from "./components/productDetails.jsx"
-import MoniteurRoute from "./components/PageEcran/MoniteurRoute.jsx"
+import MoniteurRoute from "./components/PageEcran/MoniteurRoute.jsx";
+import LoginPage from "./login/loginPage.jsx";
 
 function App() {
   return (

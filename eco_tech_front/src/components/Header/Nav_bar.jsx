@@ -2,11 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.webp";
 import styles from "./Nav_bar.module.css";
-<<<<<<< HEAD
 import { FaShoppingBasket } from "react-icons/fa";
-=======
 import Search from "./input/Search";
->>>>>>> main
 export default function Navbar() {
   return (
     <header className={styles.main}>
@@ -32,11 +29,7 @@ export default function Navbar() {
                 <Link to="/">Montre Connectées</Link>
               </li>
               <li>
-<<<<<<< HEAD
                 <Link to="/admin">Gérer</Link>
-=======
-                <Link to="/">Admin</Link>
->>>>>>> main
               </li>
             </ul>
           </nav>
