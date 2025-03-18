@@ -6,9 +6,9 @@ export function Products({product}) {
     return (
 
         <div className='productList'>
-            <Link to={`/product/${props.id}`}>
-            <div key={props.id} className='productCard'>
-                <img src={props.img} alt="product-img" className='productImage'></img>
+            <Link to={`/product/${product.id}`}>
+            <div key={product.id} className='productCard'>
+                <img src={product.img} alt="product-img" className='productImage'></img>
 
                 <FaShoppingCart className={"productCard__cart"}/>
                 <FaRegBookmark className={"productCard__wishlist"}/>
