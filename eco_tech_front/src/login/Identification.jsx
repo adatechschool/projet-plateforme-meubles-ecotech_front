@@ -11,6 +11,27 @@ function Identification() {
     console.log({ email, password });
 
     form.reset();
+
+    const fetchTest = async () => {
+      try {
+        const response = await fetch("http://localhost:3000/login", {
+          method: "post",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: email,
+            password: password,
+          }),
+        });
+
+        const data = await response.json();
+        console.log(data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchTest();
   };
 
   return (
@@ -30,5 +51,4 @@ function Identification() {
     </div>
   );
 }
-
 export default Identification;

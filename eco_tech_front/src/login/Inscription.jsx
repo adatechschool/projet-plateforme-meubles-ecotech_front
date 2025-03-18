@@ -7,14 +7,35 @@ function Inscription() {
     const form = e.target;
     const formData = new FormData(form);
 
-    const Fullname = formData.get("Fullname");
-
+    const fullname = formData.get("Fullname");
     const email = formData.get("email");
     const password = formData.get("password");
 
-    console.log({ Fullname, email, password });
+    console.log({ fullname, email, password });
 
     form.reset();
+
+    const fetchTest = async () => {
+      try {
+        const response = await fetch("http://localhost:3000/create-account", {
+          method: "post",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            fullname: fullname,
+            email: email,
+            password: password,
+          }),
+        });
+
+        const data = await response.json();
+        console.log(data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchTest();
   };
 
   return (

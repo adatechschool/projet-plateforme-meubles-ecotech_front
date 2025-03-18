@@ -16,7 +16,7 @@ function ListAllProducts(){
     console.log(products);
 
     return (
-        products.map(item => Products(item))
+        products.map(product => <Products key={product.id} product={product}/>)
     )
 }
 
