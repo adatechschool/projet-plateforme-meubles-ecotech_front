@@ -9,6 +9,8 @@ import Ordinateur_liaison from "./components/PageLaptop/Ordinateur_liaison.jsx";
 import ProductDetails from "./components/productDetails.jsx"
 import MoniteurRoute from "./components/PageEcran/MoniteurRoute.jsx";
 import LoginPage from "./login/loginPage.jsx";
+import { Gestion } from "./components/admin/Gestion-users/Gestion.jsx";
+import { ProductList } from "./components/admin/List-product/ProductList.jsx";
 
 function App() {
   return (
@@ -17,7 +19,10 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/" element={<ListAllProducts />} />
         <Route path="/smartphone" element={<Smartphon_liaison />} />
-        <Route path="/admin" element={<AdminPage />} />
+        <Route path="/admin" element={<AdminPage />}>
+          <Route path="/admin/gestion" element={<Gestion />} />
+          <Route path="/admin/product-list" element={<ProductList />} />
+        </Route>
         <Route path="/ordinateur" element={<Ordinateur_liaison />} />
         <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="/moniteur" element={<MoniteurRoute />} />
