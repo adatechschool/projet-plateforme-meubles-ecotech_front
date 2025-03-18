@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useParams } from "react-router-dom";
+import "../style/productDetails.css";
 
 function ProductDetails() {
   const { id } = useParams();
@@ -16,11 +17,16 @@ function ProductDetails() {
   }, []);
   console.log("Mon produit", product);
 
-  if (product) {
-    return;
-    <p className="product-title">{product.title} ✅</p>;
-  }
-  return <p className="">No product found</p>;
-}
+    if (product) {
+        return 
+        <div className="product-detail">
+        <img src={product.image} alt={product.title} className="product-image" />
+        <p className="product-title">{product.title} ✅</p>
+        <p className="product-description">{product.description}</p>
+        <p className="product-price">{product.price} €</p>
+      </div>
+      }
+      return <p className="">No product found</p>;
+    }
 
 export default ProductDetails;
