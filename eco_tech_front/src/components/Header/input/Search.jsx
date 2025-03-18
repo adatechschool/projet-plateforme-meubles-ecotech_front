@@ -17,7 +17,7 @@ export default function Search() {
           type="text"
           name="searchBar"
           id="searchBar"
-          placeholder="Recherch"
+          placeholder="Recherche"
         />
       </div>
       <div className="searchResults">
