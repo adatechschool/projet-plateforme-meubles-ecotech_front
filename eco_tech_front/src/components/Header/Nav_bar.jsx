@@ -29,7 +29,7 @@ export default function Navbar() {
                 <Link to="/moniteur">Moniteur</Link>
               </li>
               <li>
-                <Link to="/">Montre Connectée</Link>
+                <Link to="/montre">Montre Connectée</Link>
               </li>
               <li>
                 <Link to="/admin">Gérer</Link>

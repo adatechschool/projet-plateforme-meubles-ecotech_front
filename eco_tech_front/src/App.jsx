@@ -8,6 +8,7 @@ import { AdminPage } from "./components/admin/AdminPage.jsx";
 import Ordinateur_liaison from "./components/PageLaptop/Ordinateur_liaison.jsx";
 import ProductDetails from "./components/productDetails.jsx"
 import MoniteurRoute from "./components/PageEcran/MoniteurRoute.jsx";
+import MontreRoute from "./components/PageMontre/MontreRoute.jsx"
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/ordinateur" element={<Ordinateur_liaison />} />
         <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="/moniteur" element={<MoniteurRoute />} />
+        <Route path="/montre" element={<MontreRoute />} />
       </Routes>
     </>
   );
