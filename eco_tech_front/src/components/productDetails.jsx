@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
+import "../style/productDetails.css";
 
 function ProductDetails(){
     const {id} = useParams();
@@ -19,7 +20,7 @@ function ProductDetails(){
 
     if (product) {
         return 
-        <div className="product-card">
+        <div className="product-detail">
         <img src={product.image} alt={product.title} className="product-image" />
         <p className="product-title">{product.title} ✅</p>
         <p className="product-description">{product.description}</p>
