@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.webp";
 import styles from "./Nav_bar.module.css";
+import { FaShoppingBasket } from "react-icons/fa";
 export default function Navbar() {
   return (
     <header className={styles.main}>
@@ -27,15 +28,17 @@ export default function Navbar() {
                 <Link to="/">Montre Connectées</Link>
               </li>
               <li>
-                <Link to="/"> Audio</Link>
-              </li>
-              <li>
-                <Link to="/">Autre</Link>
+                <Link to="/admin">Gérer</Link>
               </li>
             </ul>
           </nav>
           <div className={styles.user}>
             <Link to="/login">Connexion</Link>
+            <div className={styles.basket}> 
+              <Link to="/basket">
+                <FaShoppingBasket />
+              </Link>
+              </div>
             <div className={styles.avatar}>
               <img
                 src="https://cdn-icons-png.flaticon.com/512/3607/3607444.png"
