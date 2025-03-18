@@ -30,6 +30,9 @@ export default function Navbar() {
                 <Link to="/"> Audio</Link>
               </li>
               <li>
+                <Link to="/moniteur">Moniteur</Link>
+              </li>
+              <li>
                 <Link to="/">Autre</Link>
               </li>
             </ul>
