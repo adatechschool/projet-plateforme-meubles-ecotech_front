@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Products } from "../Card/Card";
 
-function laptop (){
+function Laptop (){
     const [products,setProducts] = useState([]) 
 
     useEffect(()=>{
