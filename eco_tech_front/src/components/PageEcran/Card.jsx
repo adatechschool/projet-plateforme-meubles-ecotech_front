@@ -2,7 +2,11 @@ import { FaShoppingCart, FaRegBookmark, FaFireAlt } from 'react-icons/fa';
 import './Card.css';
 import { Link } from 'react-router-dom';
 
+<<<<<<< HEAD:eco_tech_front/src/components/PageEcran/Card.jsx
 export function Products({product}) {
+=======
+export function Products(product) {
+>>>>>>> lila:eco_tech_front/src/components/Card/Card.jsx
     return (
 
         <div className='productList'>
