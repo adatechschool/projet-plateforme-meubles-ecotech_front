@@ -1,11 +1,14 @@
 import { FaShoppingCart, FaRegBookmark, FaFireAlt } from 'react-icons/fa';
 import './Card.css';
+import { Link } from 'react-router-dom';
 
 export function Products({product}) {
     return (
+
         <div className='productList'>
-            <div key={product.id} className='productCard'>
-                <img src={product.img} alt="product-img" className='productImage'></img>
+            <Link to={`/product/${props.id}`}>
+            <div key={props.id} className='productCard'>
+                <img src={props.img} alt="product-img" className='productImage'></img>
 
                 <FaShoppingCart className={"productCard__cart"}/>
                 <FaRegBookmark className={"productCard__wishlist"}/>
@@ -19,6 +22,7 @@ export function Products({product}) {
                     </div>
                 </div>
             </div>
+            </Link>
         </div>
     )
 }
