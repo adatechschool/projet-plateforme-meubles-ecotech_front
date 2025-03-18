@@ -28,10 +28,7 @@ export default function Navbar() {
                 <Link to="/">Montre Connectées</Link>
               </li>
               <li>
-                <Link to="/"> Audio</Link>
-              </li>
-              <li>
-                <Link to="/">Autre</Link>
+                <Link to="/">Admin</Link>
               </li>
             </ul>
           </nav>
