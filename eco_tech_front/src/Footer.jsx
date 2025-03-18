@@ -15,11 +15,6 @@ function Footer() {
           {/* <image src {} alt='ecotech' */}
           <p> {new Date().getFullYear()} consommer de façon responsable</p>
         </div>
-
-
-
-
-
         <div className="footer-social">
 
           <h3>Suivez-nous</h3>

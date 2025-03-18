@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { Products } from "../Card/Card";
+import  { useEffect, useState } from "react";
+import { Card } from "../Card/Card";
 
-function smartphone (){
-  const [products,setProducts] = useState([]) 
+function Smartphone (){
+  const [products, setProducts] = useState([]) 
 
   useEffect(()=>{
 
@@ -19,10 +19,10 @@ setProducts(data2);
 console.log(products);
 
 return(
-    products.map(product => <Products key={product.id} product={product}/>)
+    products.map(product => <Card key={product.id} product={product}/>)
 )
 
 }
 
 
-export default smartphone
+export default Smartphone

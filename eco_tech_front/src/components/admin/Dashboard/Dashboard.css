@@ -1,0 +1,45 @@
+
+.container-dashboard {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+}
+
+.menu-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 250px;
+    border: 1px solid black;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-add {
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    align-content: center;
+    align-self: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
