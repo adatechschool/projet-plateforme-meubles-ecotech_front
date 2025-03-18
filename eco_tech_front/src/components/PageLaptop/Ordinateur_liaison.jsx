@@ -6,7 +6,7 @@ function laptop (){
 
     useEffect(()=>{
         const LaptopProducts = async() =>{
-        const resLaptop = await fetch('http://localhost:3000/products/type/5')
+        const resLaptop = await fetch('http://localhost:3000/products?category=5')
         console.log('response',resLaptop)
         const dataLaptop = await resLaptop.json();
         console.log(dataLaptop);
@@ -14,11 +14,11 @@ function laptop (){
         }
         LaptopProducts();
     },[])
-    
+
     console.log(products);
 
     return(
-        products.map(product=>Products(product))
+        products.map(product=><Products key = {product.id} product={product}/>)
     )
 }
 export default laptop;
