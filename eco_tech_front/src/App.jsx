@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 
-
+import LoginPage from "./login/loginPage.jsx";
 import ListAllProducts from "./components/Card/ListAllProducts.jsx";
 import Smartphon_liaison from "./components/PageSmartphone/Smartphon_liaison.jsx";
 import Ordinateur_liaison from "./components/PageLaptop/Ordinateur_liaison.jsx";

@@ -25,7 +25,10 @@ export default function Navbar() {
                 <Link to="/">Ordinateur Portable</Link>
               </li>
               <li>
-                <Link to="/">Montre Connectées</Link>
+                <Link to="/moniteur">Moniteur</Link>
+              </li>
+              <li>
+                <Link to="/">Montre Connectée</Link>
               </li>
               <li>
                 <Link to="/">Admin</Link>
