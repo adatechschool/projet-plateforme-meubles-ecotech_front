@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Products } from "../Card/Card";
+import { Card } from "../Card/Card";
 
 function laptop (){
     const [products,setProducts] = useState([]) 
@@ -18,7 +18,7 @@ function laptop (){
     console.log(products);
 
     return(
-        products.map(product=><Products key = {product.id} product={product}/>)
+        products.map(product=><Card key = {product.id} product={product}/>)
     )
 }
 export default laptop;
