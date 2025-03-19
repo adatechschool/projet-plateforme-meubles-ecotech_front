@@ -13,12 +13,33 @@ export const FetchAllUsers = () => {
         }
         fetchUsers();
     }, [])
+    const handleDelete = async (id) => {
+        try {
+            const response = await fetch(`http://localhost:3000/user/remove/`, {
+                method: "post",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                  id: id
+                }),
+              });
+
+            if (response.ok) {
+                setUsers((prevUsers) => prevUsers.filter(user => user.id !== id));
+            } else {
+                console.error("Erreur lors de la suppression de l'utilisateur");
+            }
+        } catch (error) {
+            console.error("Erreur réseau :", error);
+        }
+    };
     return (
         users.map((user => (
             <div className="user-card" key={user.id}>
                 <h3>{user.fullname}</h3>
                 <p>{user.email}</p>
-                <button className="button-delete">Supprimer</button>
+                <button className="button-delete" onClick={() => handleDelete(user.id)}>Supprimer</button>
             </div>
         )))
     )
