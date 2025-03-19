@@ -1,32 +1,31 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Card } from "../Card/Card";
-import "./Smartphone.css"; // Import the CSS file
 
-function Smartphone() {
+function Montre() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    const SmartphoneProducts = async () => {
+    const MontreProducts = async () => {
       const response2 = await fetch(
-        "http://localhost:3000/products?category=6"
+        "http://localhost:3000/products?category=8"
       );
       const data2 = await response2.json();
       setProducts(data2);
     };
-    SmartphoneProducts();
+    MontreProducts();
   }, []);
 
   return (
     <div className="container">
       <div className="productList">
-        {products.map((item) => (
+        {products.map((product) => (
           <Link
-            key={item.id}
-            to={`/product/${item.id}`}
+            key={product.id}
+            to={`/product/${product.id}`}
             className="productLink"
           >
-            <Card product={item} />
+            <Card product={product} />
           </Link>
         ))}
       </div>
@@ -34,4 +33,4 @@ function Smartphone() {
   );
 }
 
-export default Smartphone;
+export default Montre;
