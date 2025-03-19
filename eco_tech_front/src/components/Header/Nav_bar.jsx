@@ -21,7 +21,7 @@ export default function Navbar() {
                 <Link to="/smartphone">Smartphone</Link>
               </li>
               <li>
-                <Link to="/">Ordinateur Portable</Link>
+                <Link to="/ordinateur">Ordinateur Portable</Link>
               </li>
               <li>
                 <Link to="/">Montre Connectées</Link>

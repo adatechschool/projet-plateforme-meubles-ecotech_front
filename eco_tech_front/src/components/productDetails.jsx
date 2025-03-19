@@ -21,7 +21,7 @@ function ProductDetails(){
     if (product) {
         return (
           <div className="product-detail">
-            <img src={product.image} alt={product.title} className="product-image" />
+            <img src={product.img} alt={product.title} className="product-image" />
             <p className="product-title">{product.title} ✅</p>
             <p className="product-description">{product.description}</p>
             <p className="product-price">{product.price} €</p>

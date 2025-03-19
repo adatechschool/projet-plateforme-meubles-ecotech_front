@@ -2,7 +2,7 @@ import { FaShoppingCart, FaRegBookmark, FaFireAlt } from 'react-icons/fa';
 import './Card.css';
 import { Link } from 'react-router-dom';
 
-export function Products(product) {
+export function Products({product}) {
     return (
 
         <div className='productList'>
