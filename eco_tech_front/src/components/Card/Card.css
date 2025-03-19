@@ -1,6 +1,123 @@
- .container {
+:root {
+  --color-primary: #4a90e2;
+  --color-secondary: #50e3c2;
+  --color-grey-primary: #f5f5f5;
+  --color-grey-secondary: #e0e0e0;
+  --color-text-primary: #333;
+  --color-text-secondary: #777;
+  --color-danger: #ff3b30;
+  --color-dark: #111;
+  --color-light: #fff;
+}
+
+.container {
   display: flex;
-  /* min-height: 100vh; */
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--color-grey-primary);
+}
+
+.productList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 5rem;
+  width: 100%;
+}
+
+.productCard {
+  position: relative;
+  background-color: var(--color-light);
+  padding: 1rem;
+  width: 100%;
+  max-width: 20rem;
+  transition: 0.3s ease-in-out;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.productCard:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0.5rem 0.75rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.productImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.productCard__cart,
+.productCard__wishlist,
+.productCard__fastSelling {
+  position: absolute;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--color-light);
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.productCard__cart {
+  top: 1rem;
+  background-color: var(--color-primary);
+}
+
+.productCard__wishlist {
+  top: 4rem;
+  background-color: var(--color-secondary);
+}
+
+.productCard__fastSelling {
+  left: 1rem;
+  top: 1rem;
+  background-color: var(--color-danger);
+}
+
+.productCard__cart:hover,
+.productCard__wishlist:hover,
+.productCard__fastSelling:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.productCard__content {
+  margin: 1rem;
+  text-align: center;
+}
+
+.productName {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-text-primary);
+}
+
+.productInfo {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 1rem;
+}
+
+.displayStack__1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.productPrice {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+/* .container {
+  display: flex;
+  min-height: 100vh;
   justify-content: center;
  }
  
@@ -100,9 +217,7 @@
 .productPrice {
     font-size: 1.5rem;
     font-weight: bold;
-}
-
-
+} */
 
 /****************************************/
 
@@ -212,5 +327,3 @@
     font-size: 1.5rem;
     font-weight: bold;
   } */
-  
-  

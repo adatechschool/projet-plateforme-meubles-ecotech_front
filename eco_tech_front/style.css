@@ -1,0 +1,60 @@
+/* 🌎 Global Styles */
+:root {
+  --color-primary: #4a90e2;
+  --color-secondary: #50e3c2;
+  --color-background: #f5f5f5;
+  --color-dark: #1a1a1a;
+  --color-light: #ffffff;
+  --color-accent: #66bb6a;
+  --color-border: #ccc;
+  --color-text-primary: #333;
+  --color-text-secondary: #777;
+
+  --border-radius: 8px;
+  --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-dark: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+button {
+  padding: 10px;
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #559a58;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
