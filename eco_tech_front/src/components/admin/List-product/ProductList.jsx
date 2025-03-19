@@ -1,5 +1,15 @@
+import ListAllProducts from "../../Card/ListAllProducts";
+
 export const ProductList = () => {
+    const styles = {
+        container: {
+            margin: "auto",
+        },
+    };
+
     return (
-        <h1>Liste des produits</h1>
-    )
+        <div style={styles.container}>
+            <ListAllProducts />
+        </div>
+    );
 }

@@ -1,6 +1,7 @@
-import { Link, Outlet } from "react-router-dom";
-import { ListAllCategory } from "../ListAllCategory";
 import "./Dashboard.css";
+import { ListAllCategory } from "../ListAllCategory";
+import { Link, Outlet } from "react-router-dom";
+
 export const Dashboard = () => {
   return (
     <div className="container-dashboard">
