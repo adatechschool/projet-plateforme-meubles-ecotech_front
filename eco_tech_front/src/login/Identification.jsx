@@ -45,7 +45,7 @@ function Identification() {
           <label htmlFor="password">Mot de passe :</label>
           <input type="password" id="password" name="password" required />
 
-          <button type="submit">Connection</button>
+          <button type="submit">Connexion</button>
         </form>
       </div>
     </div>
