@@ -6,7 +6,7 @@ function Laptop (){
 
     useEffect(()=>{
         const LaptopProducts = async() =>{
-        const resLaptop = await fetch('http://localhost:3000/products?category=5')
+        const resLaptop = await fetch('http://localhost:3000/products?category=9')
         console.log('response',resLaptop)
         const dataLaptop = await resLaptop.json();
         console.log(dataLaptop);
