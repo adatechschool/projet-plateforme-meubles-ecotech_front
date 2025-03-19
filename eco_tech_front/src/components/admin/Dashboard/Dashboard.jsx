@@ -1,39 +1,27 @@
 import './Dashboard.css'
-import { ListAllCategory } from '../ListAllCategory';
-import { Link, Outlet } from 'react-router-dom';
+import { Link, Outlet, useLocation } from 'react-router-dom';
+import { AddProduct } from '../AddProduct/AddProduct';
 
 export const Dashboard = () => {
+    const location = useLocation();
+
+    const hideAddProductRoutes = ['/admin/gestion', '/admin/product-list']
 
     return (
         <div className="container-dashboard">
             <div className='menu-dashboard'>
                 <h1>Tableau de bord</h1>
                 <h3>Administrateur</h3>
-                <Outlet />
-                <h3><Link to="user-management">Gestion des utilisateurs</Link></h3>
+                <h3><Link to="gestion">Gestion des utilisateurs</Link></h3>
                 <h3><Link to="product-list">Liste des produits</Link></h3>
             </div>
             <div className='container'>
-                <div className='container-add'>
-                    <form action="" className='form-content'>
-                            <label htmlFor="category">Category</label>
-                            <select name="category" id="category">
-                                <option value="">-- Sélectionnez une catégorie --</option>
-                                <ListAllCategory />
-                            </select>
-                            <label htmlFor="nom">Nom :</label>
-                            <input type="text" />
-                            <label htmlFor="url">Lien de l'image :</label>
-                            <input type="text" />
-                            <label htmlFor="description">Description :</label>
-                            <input type="text" />
-                            <label htmlFor="price">Prix :</label>
-                            <input type="text" />
-
-                            <button>Ajouter</button>
-                        
-                    </form>
-                </div>
+            <Outlet />
+            {!hideAddProductRoutes.includes(location.pathname) && (
+                    <div className="container-add">
+                        <AddProduct />
+                    </div>
+                )}
             </div>
         </div>
     )
