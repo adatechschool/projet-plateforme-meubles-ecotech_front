@@ -30,7 +30,7 @@ export default function Navbar() {
                 <Link to="/"> Audio</Link>
               </li>
               <li>
-                <Link to="/">Autre</Link>
+                <Link to="/autre">Autre</Link>
               </li>
             </ul>
           </nav>
