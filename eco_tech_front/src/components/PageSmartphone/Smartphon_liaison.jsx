@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { Card } from "../Card/Card";
 
 function Smartphone (){
@@ -19,7 +20,11 @@ setProducts(data2);
 console.log(products);
 
 return(
-    products.map(product => <Card key={product.id} product={product}/>)
+  products.map(item =>
+    <Link to={`/product/${item.id}`}> 
+      <Card key={item.id} product={item}/>
+    </Link>
+  )
 )
 
 }
