@@ -2,14 +2,14 @@
 .container-dashboard {
   display: flex;
   min-height: 100vh;
-  background-color: #ECF0F1;
+  background-color: #f5f8f9;
   font-family: Arial, sans-serif;
 }
 /* :pushpin: Menu latéral */
 .menu-dashboard {
   width: 250px;
-  background-color: #2C3E50;
-  color: white;
+  background-color: #c0f1dbe6;
+  color: rgb(33, 32, 32);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -23,11 +23,11 @@
 }
 .menu-dashboard h3 a {
   text-decoration: none;
-  color: #1ABC9C;
+  color: #13211e;
   transition: color 0.3s;
 }
 .menu-dashboard h3 a:hover {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 /* :pushpin: Contenu principal */
 .container {
@@ -54,7 +54,7 @@
 label {
   font-weight: bold;
   margin-bottom: 5px;
-  color: #2C3E50;
+  color: #2c3e50;
 }
 input,
 select {
@@ -62,17 +62,17 @@ select {
   border-radius: 5px;
   border: 1px solid #ccc;
   width: 100%;
-  background: #F8F9FA;
+  background: #f8f9fa;
   transition: 0.3s;
 }
 input:focus,
 select:focus {
-  border-color: #1ABC9C;
+  border-color: #1abc9c;
   outline: none;
 }
 button {
   padding: 10px;
-  background-color: #1ABC9C;
+  background-color: #7de2ced6;
   color: white;
   border: none;
   border-radius: 5px;
@@ -81,7 +81,7 @@ button {
   font-weight: bold;
 }
 button:hover {
-  background-color: #16A085;
+  background-color: #16a085;
 }
 /* :pushpin: Page Gestion des utilisateurs */
 .gestion-container {
@@ -94,7 +94,7 @@ button:hover {
 }
 .gestion-container h1 {
   font-size: 2rem;
-  color: #2C3E50;
+  color: #2c3e50;
   text-align: center;
   margin-bottom: 20px;
 }
