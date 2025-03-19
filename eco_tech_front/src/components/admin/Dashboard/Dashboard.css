@@ -1,45 +1,115 @@
-
+/* :bar_chart: Dashboard Styles */
 .container-dashboard {
-    margin: 0;
-    height: 100vh;
-    display: flex;
+  display: flex;
+  min-height: 100vh;
+  background-color: #ECF0F1;
+  font-family: Arial, sans-serif;
 }
-
+/* :pushpin: Menu latéral */
 .menu-dashboard {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    height: 100%;
-    width: 250px;
-    border: 1px solid black;
+  width: 250px;
+  background-color: #2C3E50;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
-
+.menu-dashboard h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.menu-dashboard h3 a {
+  text-decoration: none;
+  color: #1ABC9C;
+  transition: color 0.3s;
+}
+.menu-dashboard h3 a:hover {
+  color: #FFFFFF;
+}
+/* :pushpin: Contenu principal */
 .container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
 .container-add {
-    height: 500px;
-    width: 500px;
-    border: 1px solid black;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
 }
-
 .form-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
-    align-content: center;
-    align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
-
-.form-container {
-    display: flex;
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #2C3E50;
+}
+input,
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  background: #F8F9FA;
+  transition: 0.3s;
+}
+input:focus,
+select:focus {
+  border-color: #1ABC9C;
+  outline: none;
+}
+button {
+  padding: 10px;
+  background-color: #1ABC9C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: bold;
+}
+button:hover {
+  background-color: #16A085;
+}
+/* :pushpin: Page Gestion des utilisateurs */
+.gestion-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.gestion-container h1 {
+  font-size: 2rem;
+  color: #2C3E50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* :pushpin: Responsivité */
+@media (max-width: 768px) {
+  .container-dashboard {
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
+  }
+  .menu-dashboard {
+    width: 100%;
+    text-align: center;
+    box-shadow: none;
+  }
+  .gestion-container {
+    height: auto;
+    padding: 20px;
+  }
 }

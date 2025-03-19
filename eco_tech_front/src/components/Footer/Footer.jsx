@@ -1,6 +1,5 @@
 import React from 'react';
 import './Footer.css'; 
-import './fanta.css';
 import facebookLogo from './img.jpg/logo-facebook_1080029-107.webp';
 import  twitterLogo from'./img.jpg/twitter.webp';
 import instagramLogo from'./img.jpg/Instagram.webp';

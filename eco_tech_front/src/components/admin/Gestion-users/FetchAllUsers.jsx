@@ -12,18 +12,17 @@ export const FetchAllUsers = () => {
             setUsers(data)
         }
         fetchUsers();
-    }, [])
+    }, []);
+
     const handleDelete = async (id) => {
         try {
             const response = await fetch(`http://localhost:3000/user/remove/`, {
-                method: "post",
+                method: "POST",
                 headers: {
                   "Content-Type": "application/json",
                 },
-                body: JSON.stringify({
-                  id: id
-                }),
-              });
+                body: JSON.stringify({ id }),
+            });
 
             if (response.ok) {
                 setUsers((prevUsers) => prevUsers.filter(user => user.id !== id));
@@ -34,13 +33,19 @@ export const FetchAllUsers = () => {
             console.error("Erreur réseau :", error);
         }
     };
+
     return (
-        users.map((user => (
-            <div className="user-card" key={user.id}>
-                <h3>{user.fullname}</h3>
-                <p>{user.email}</p>
-                <button className="button-delete" onClick={() => handleDelete(user.id)}>Supprimer</button>
+        <div className="user-container">
+            <h1>Liste des utilisateurs</h1>
+            <div className="user-list">
+                {users.map((user) => (
+                    <div className="user-card" key={user.id}>
+                        <h3>{user.fullname}</h3>
+                        <p>{user.email}</p>
+                        <button className="button-delete" onClick={() => handleDelete(user.id)}>Supprimer</button>
+                    </div>
+                ))}
             </div>
-        )))
-    )
+        </div>
+    );
 }
