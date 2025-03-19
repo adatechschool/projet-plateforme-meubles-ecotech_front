@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Card } from "./Card";
+import { Link } from "react-router-dom";
 
 function ListAllProducts(){
     const [products, setProducts] = useState([]);
@@ -18,7 +19,11 @@ function ListAllProducts(){
     console.log('products: ', products);
 
     return (
-        products.map(item => <Card key={item.id} product={item}/>)
+        products.map(item =>
+            <Link to={`/product/${item.id}`}> 
+                <Card key={item.id} product={item}/>
+            </Link>
+        )
     )
 }
 
