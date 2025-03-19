@@ -1,6 +1,6 @@
 import './Dashboard.css'
 import { Link, Outlet, useLocation } from 'react-router-dom';
-import { AddProduct } from '../AddProduct';
+import { AddProduct } from '../AddProduct/AddProduct';
 
 export const Dashboard = () => {
     const location = useLocation();

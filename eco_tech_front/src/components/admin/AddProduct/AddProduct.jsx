@@ -1,4 +1,4 @@
-import { ListAllCategory } from "./ListAllCategory";
+import { ListAllCategory } from "../ListAllCategory";
 
 export const AddProduct = () => {
     const handleSubmit = (e) => {

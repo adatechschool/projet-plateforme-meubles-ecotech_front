@@ -18,6 +18,7 @@ export const FetchAllUsers = () => {
             <div className="user-card" key={user.id}>
                 <h3>{user.fullname}</h3>
                 <p>{user.email}</p>
+                <button className="button-delete">Supprimer</button>
             </div>
         )))
     )

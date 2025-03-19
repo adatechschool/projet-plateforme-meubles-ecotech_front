@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import './app.css'
 
 
 import ListAllProducts from "./components/Card/ListAllProducts.jsx";

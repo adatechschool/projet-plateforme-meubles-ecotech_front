@@ -17,7 +17,21 @@
 }
 
 .user-card {
-    height: 70px;
-    width: 250px;
+    height: 100px;
+    width: 300px;
     border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-delete {
+    height: 30px;
+    width: 90px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
