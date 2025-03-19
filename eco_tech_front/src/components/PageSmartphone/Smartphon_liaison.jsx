@@ -21,8 +21,8 @@ console.log(products);
 
 return(
   products.map(item =>
-    <Link to={`/product/${item.id}`}> 
-      <Card key={item.id} product={item}/>
+    <Link key={item.id} to={`/product/${item.id}`}> 
+      <Card product={item}/>
     </Link>
   )
 )
