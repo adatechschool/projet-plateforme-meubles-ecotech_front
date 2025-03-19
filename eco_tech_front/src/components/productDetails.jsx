@@ -14,7 +14,7 @@ function ProductDetails() {
       setProduct(data[0]);
     };
     loadProduct();
-  }, []);
+  }, [id]);
   console.log("Mon produit", product);
 
     if (product) {
